@@ -1,0 +1,235 @@
+@keyframes triangle{
+0%{
+  transform:rotate(0deg);
+ }
+100%{
+  transform:rotate(360deg);
+    }
+}
+@keyframes circle{
+0%{
+transform:skew(-50deg);
+}
+100%{
+transform:skew(60deg);
+ }
+}
+@keyframes square{
+ 0%{
+   transform:scale(1.2,1.5);
+ }
+100%{
+    transform:scale(1.5,1.2);
+  }
+}
+			@keyframes rectangle{
+			 0%{
+			   transform:translate(5px,20px);
+			 }
+			 100%{
+			    transform:translate(20px,5px);
+			  }
+			}
+			@keyframes rhombus{
+			 0%{
+			   transform:skew(-60deg);
+			 }
+			 100%{
+			    transform:skew(60deg);
+			  }
+			}
+			@keyframes boat{
+				0%{
+					transform:rotate(10deg);
+				}
+				100%{
+					transform:rotate(-10deg);
+				}
+			}
+			.triangle{
+			  margin:10px;
+			  width:0px;
+			  height:0px;
+			  /*border-top:50px solid red;*/
+			  border-bottom:110px solid wheat;
+			  border-left:110px solid transparent;
+			  border-right:110px solid transparent;
+			  animation: triangle 4s infinite alternate;
+			 }
+			 .circle{
+			   margin:30px;
+			   width:100px;
+			   height:100px;
+			   background-color:green;
+			   border-radius:100px;
+			   animation:circle 2s infinite alternate;
+			 }
+			.square{
+			   margin:50px;
+			   width:60px;
+			   height:60px;
+			   background-color:black;
+			   animation:square 2s infinite alternate;
+			}
+			.rectangle{
+				margin: 70px;
+				width: 100px;
+				height: 50px;
+				background-color: orange;
+				animation:rectangle 2s infinite alternate;
+			}
+			.rhombus{
+				margin: 90px;
+				width: 120px;
+				height: 60px;
+				background-color: navy;
+				/*transform: skew(20deg);*/
+				animation:rhombus 2s infinite alternate;
+			}
+			.boat{
+				margin: 110px;
+				width:0px;
+			  	height:0px;
+			  	border-top:75px solid grey;
+				/*border-bottom:110px solid wheat;*/
+				border-left:75px solid transparent;
+				border-right:75px solid transparent;
+				width: 25%;
+				animation: boat 3s infinite alternate;
+			}
+			.boat p{
+				color: white;
+				font-weight: bold;
+				top: -75px;
+				left: 0px;
+				position: relative;
+				margin: 0px;
+			}
+			.container{
+				margin:200px;
+				background:#555;
+				border:5px #777;
+				border-style:inset;
+				width:25%;
+				height:80px;
+				transform:rotate(90deg);
+				padding:10px;
+			}
+			@keyframes frame{
+				0%{
+					transform: rotate(-5deg);
+				}
+				100%{
+					transform: rotate(5deg);
+				}
+			}
+			.knob{
+				position: absolute;
+				width: 30px;
+				height: 20px;
+				background-color: #777;
+				border-radius: 20px;
+				left: -4%;
+				top: 40%;
+				animation: frame 3s infinite alternate;
+			}
+			.rod{
+				position: absolute;
+				width: 10px;
+				height: 180px;
+				transform: rotate(90deg);
+				background-color: #777;
+				border-radius: 20px;
+				left: 290%;
+				top: -400%;
+			}
+			.clock{
+				position:absolute;
+				margin:0px;
+				width:100px;
+				height:70px;
+				background:white;
+				border:3px solid black;
+				border-radius:40px;	
+				top: -30%;
+				left: -470%;
+				transform: rotate(-90deg);
+				/*transform:translate(130px,0px);*/
+			}
+			#top{
+				position:absolute;
+				transform:rotate(-90deg);
+				top:15%;
+			}
+			#bottom{
+				position:absolute;
+				left:90%;
+				transform:rotate(-90deg);
+				top:12%;
+			}
+			#right{
+				position:absolute;
+				left:45%;
+				transform:rotate(-90deg);
+				top:-30%;
+			}
+			#left{
+				position:absolute;
+				left:45%;
+				transform:rotate(-90deg);
+				top:55%;
+			}
+			#hour{
+				transform:rotate(-90deg);
+			}
+			#hour{
+				position:absolute;
+				left:28%;
+				top:-5%;
+			}
+			p{
+				color:black;
+			}
+			#knob{
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #000;
+			border-radius: 20px;
+			left: 45%;
+			top: 22%;
+		}
+		#minute-hand{
+			position: relative;
+			width: 2px;
+			height: 45px;
+			background-color: black;
+			left: 25%;
+			top: -3%;
+			transform: rotate(90deg);
+		}
+		#hour-hand{
+			position: relative;
+			width: 2px;
+			height: 30px;
+			background-color: black;
+			left: 47%;
+			top: -98%;
+			transform: rotate(0deg);
+				
+		}
+		#second-hand{
+			position:relative;
+			width: 1px;
+			height: 40px;
+			background-color: black;
+			left: 30%;
+			top: -175%;
+			transform: rotate(-50deg);
+		}
+		h2,.container1{
+			margin: 0 40%;
+			text-align: center;
+			box-shadow: 2px 4px 6px;
+		}
+		
